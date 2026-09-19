@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For My Mai ♡</title>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="hearts"></div>
+
+
+<div class="walking-cat">
+🐈
+</div>
+
+
+<div class="cursor-cat">
+🐱
+</div>
+
+
+
+
+
+<!-- =====================
+HOME
+===================== -->
+
+
+<section id="home" class="page active">
+
+
+<div class="hero-content">
+
+
+<p class="small-title">
+A little world made with love ♡
+</p>
+
+
+
+<h1>
+For My Mai
+</h1>
+
+
+
+<p class="subtitle">
+A birthday surprise created especially for you 🎀
+</p>
+
+
+
+
+<div class="countdown">
+
+
+<div>
+<span id="days">00</span>
+<small>Days</small>
+</div>
+
+
+<div>
+<span id="hours">00</span>
+<small>Hours</small>
+</div>
+
+
+<div>
+<span id="minutes">00</span>
+<small>Minutes</small>
+</div>
+
+
+<div>
+<span id="seconds">00</span>
+<small>Seconds</small>
+</div>
+
+
+</div>
+
+
+
+
+
+<button id="startBtn">
+
+Open Your Surprise 💌
+
+</button>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =====================
+LOVE LETTER
+===================== -->
+
+
+<section id="letters" class="page">
+
+
+<div class="section-box">
+
+
+<h2>
+Love Letters 💌
+</h2>
+
+
+<p>
+Six little messages waiting for you ♡
+</p>
+
+
+
+
+<div class="letter-container">
+
+
+
+<div class="envelope" data-letter="miss">
+
+💌
+
+<h3>
+Open When You Miss Me
+</h3>
+
+</div>
+
+
+
+
+
+<div class="envelope" data-letter="tired">
+
+💌
+
+<h3>
+Open When You're Tired
+</h3>
+
+</div>
+
+
+
+
+
+<div class="envelope" data-letter="birthday">
+
+💌
+
+<h3>
+Birthday Letter
+</h3>
+
+</div>
+
+
+
+
+
+
+<div class="envelope" data-letter="smile">
+
+💌
+
+<h3>
+Open When You Need A Smile
+</h3>
+
+</div>
+
+
+
+
+
+
+<div class="envelope" data-letter="love">
+
+💌
+
+<h3>
+Why I Love You
+</h3>
+
+</div>
+
+
+
+
+
+
+<div class="envelope" data-letter="secret">
+
+💌
+
+<h3>
+Secret Letter
+</h3>
+
+</div>
+
+
+
+
+</div>
+
+
+
+<p id="letterProgress">
+
+0 / 6 letters opened ♡
+
+</p>
+
+
+
+
+<button id="nextQuizBtn">
+Continue To Quiz 💗
+</button>
+
+</div>
+
+
+</section>
+
+
+<!-- =====================
+QUIZ
+===================== -->
+
+
+<section id="quiz" class="page">
+
+
+<div class="section-box">
+
+
+<h2>
+How Well Do You Know Me? 🧠
+</h2>
+
+
+<p>
+Let's see how much you remember about us ♡
+</p>
+
+
+<div id="quizBox">
+
+<button id="quizStart">
+
+Start Quiz ♡
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================
+GAMES
+===================== -->
+
+
+<section id="games" class="page">
+
+
+<div class="section-box">
+
+
+<h2>
+Mini Games 🎮
+</h2>
+
+<div class="game-card" id="heartGameCard">
+
+<h3>
+Catch The Hearts ❤️
+</h3>
+
+
+<p>
+Catch as many hearts as you can!
+</p>
+
+
+<button id="heartGameBtn">
+Play
+</button>
+
+
+</div>
+<div class="game-card">
+
+<h3>
+Adobo Memory 🐱
+</h3>
+
+
+<button id="memoryGameBtn">
+Play
+</button>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================
+FINAL
+===================== -->
+
+
+<section id="final" class="page">
+
+
+<div class="section-box">
+
+
+<h2>
+One Last Surprise 🎁
+</h2>
+
+
+<p>
+You unlocked everything ♡
+</p>
+
+
+<button id="giftBtn">
+
+Open Final Gift 🎁
+
+</button>
+
+
+<div id="finalMessage"></div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================
+LETTER POPUP
+===================== -->
+
+
+<div class="letter-popup" id="letterPopup">
+
+
+<div class="letter-box">
+
+
+<button id="closeLetter">
+
+✕
+
+</button>
+
+
+
+<div id="letterContent">
+
+
+<h2>
+Your Letter ♡
+</h2>
+
+
+<p>
+Your message will appear here...
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- =====================
+AUDIO
+===================== -->
+
+
+<audio id="bgMusic" loop>
+
+<source src="assets/audio/soft-bg.mp3" type="audio/mp3">
+
+</audio>
+
+
+
+<audio id="clickSound">
+
+<source src="assets/audio/click.mp3" type="audio/mp3">
+
+</audio>
+
+
+
+<audio id="meowSound">
+
+<source src="assets/audio/meow.mp3" type="audio/mp3">
+
+</audio>
+
+
+
+<audio id="missSound">
+
+<source src="assets/audio/miss-me.mp3">
+
+</audio>
+
+
+
+<audio id="tiredSound">
+
+<source src="assets/audio/tired.mp3">
+
+</audio>
+
+
+
+<audio id="birthdaySound">
+
+<source src="assets/audio/birthday.mp3">
+
+</audio>
+
+
+
+<audio id="smileSound">
+
+<source src="assets/audio/smile.mp3">
+
+</audio>
+
+
+
+<audio id="loveSound">
+
+<source src="assets/audio/love.mp3">
+
+</audio>
+
+
+
+<audio id="secretSound">
+    <source src="assets/audio/secret.mp3" type="audio/mp3">
+</audio>
+
+
+<!-- JAVASCRIPT -->
+
+<script src="script.js"></script>
+<script src="letters.js"></script>
+<script src="quiz.js"></script>
+<script src="games.js"></script>
+
+
+</body>
+
+</html>
+
+
+
